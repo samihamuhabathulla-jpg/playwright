@@ -6,4 +6,4 @@ test('Login Test', async ({ page }) => {
     await page.fill('#password', process.env.PASSWORD!);
     await page.click('button[type="submit"]');
     await expect(page.locator('.flash.success')).toBeVisible();
-});                             
+});                      

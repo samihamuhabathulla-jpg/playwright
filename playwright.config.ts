@@ -42,7 +42,7 @@ video: 'retain-on-failure',
   },
 
   /* Configure projects for major browsers */
-  projects: [
+  /*projects: [
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
@@ -77,7 +77,7 @@ video: 'retain-on-failure',
     //   name: 'Google Chrome',
     //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
     // },
-  ],
+  //],
 
   /* Run your local dev server before starting the tests */
   // webServer: {
