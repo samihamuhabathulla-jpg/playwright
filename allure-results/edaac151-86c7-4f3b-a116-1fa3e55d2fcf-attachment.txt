@@ -1,1 +1,0 @@
-Test execution continues even if a soft assertion fails.
