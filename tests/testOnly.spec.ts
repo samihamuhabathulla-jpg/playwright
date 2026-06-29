@@ -1,6 +1,6 @@
 import { test } from "@playwright/test";
 
-test.only("Login", async ({ page }) => {
+test("Login", async ({ page }) => {
     console.log("Login");
 });
 
