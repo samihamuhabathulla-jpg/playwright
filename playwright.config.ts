@@ -33,12 +33,22 @@ export default defineConfig({
     ['allure-playwright']
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
-  use: {
     /* Base URL to use in actions like `await page.goto('')`. */
     // baseURL: 'http://localhost:3000',
-video: 'retain-on-failure',
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
+  use: {
     trace: 'on',
+    video: 'retain-on-failure',
+
+    actionTimeout: 10000,
+    navigationTimeout: 30000
+},
+
+expect: {
+    timeout: 10000
+},
+
+timeout: 60000,
   },
 
   /* Configure projects for major browsers */
